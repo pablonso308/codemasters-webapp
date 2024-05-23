@@ -1,6 +1,21 @@
+import React from 'react';
+import App from 'next/app';
+import '../styles/globals.css';
+import BackofficeLayout from '../components/BackofficeLayout';
 
-export default function Home() {
-  return (
-      <>Implementar aquí la pantalla de login usando un componente React</>
-  );
+class MyApp extends App {
+  render() {
+    const { Component, pageProps } = this.props;
+
+
+    const Layout = Component.Layout || BackofficeLayout;
+
+    return (
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+    );
+  }
 }
+
+export default MyApp;
