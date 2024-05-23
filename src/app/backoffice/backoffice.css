@@ -1,1 +1,15 @@
+.backoffice-container {
+    display: flex;
+    gap: 20px;
+}
+
+.backoffice-sidebar {
+    /* Estilos para la barra lateral */
+    flex: 0 0 200px; /* Fijar ancho de la barra lateral a 200px */
+}
+
+.backoffice-content {
+    /* Estilos para el contenido principal */
+    flex: 1; /* El contenido principal ocupará el espacio restante */
+}
 
