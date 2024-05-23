@@ -1,20 +1,14 @@
 // src/components/BackofficeLayout.js
 
 import React from 'react';
-import BackofficeMenu from './Menu';
-import '../styles/backoffice.css';
+import BackofficeLayout from '../../components/BackofficeLayout';
 
-const BackofficeLayout = ({ children }) => {
+const Inicio = () => {
     return (
-        <div className="backoffice-container">
-            <div className="backoffice-sidebar">
-                <BackofficeMenu />
-            </div>
-            <div className="backoffice-content">
-                {children}
-            </div>
-        </div>
+        <BackofficeLayout>
+            <h1>Página de Inicio del Backoffice</h1>
+        </BackofficeLayout>
     );
 };
 
-export default BackofficeLayout;
+export default Inicio;

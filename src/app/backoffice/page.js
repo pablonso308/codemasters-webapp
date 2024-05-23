@@ -8,4 +8,5 @@ export default function Home() {
         <p>Selecciona una sección en el menú de la izquierda</p>
       </>
   );
+
 }
